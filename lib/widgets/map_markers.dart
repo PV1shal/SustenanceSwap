@@ -1,9 +1,12 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:custom_info_window/custom_info_window.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:provider/provider.dart';
 
 import '../models/post.dart';
+import '../models/user.dart';
 import '../screens/custom_marker_window.dart';
 import '../utils/privacy_option.dart';
 
@@ -12,7 +15,8 @@ List<Marker>? getMarkers(
     List<QueryDocumentSnapshot<Map<String, dynamic>>>? postLocations,
     CustomInfoWindowController customInfoWindowController,
     FirebaseFirestore firebaseFirestore,
-    FirebaseAuth firebaseAuth) {
+    FirebaseAuth firebaseAuth,
+    BuildContext context) {
   final currentUserUid = firebaseAuth.currentUser!.uid;
 
   final posts = <LatLng, List<PostModel>>{};
@@ -38,16 +42,15 @@ List<Marker>? getMarkers(
     final privacy = post.data()['privacy'];
 
     //filtering posts which are having privacy option as only me and ownerUid is not currentUserUid
-    if (privacy == PrivacyOption.onlyMe.value && ownerId != currentUserUid) {
-      continue;
+    if (privacy == "Public" ||
+        privacy == Provider.of<UserModel>(context).university) {
+      final newPostInfo = [newPost];
+
+      posts.update(loc, (value) {
+        value.add(newPost);
+        return value;
+      }, ifAbsent: () => newPostInfo);
     }
-
-    final newPostInfo = [newPost];
-
-    posts.update(loc, (value) {
-      value.add(newPost);
-      return value;
-    }, ifAbsent: () => newPostInfo);
   }
 
   final markers = <Marker>[];

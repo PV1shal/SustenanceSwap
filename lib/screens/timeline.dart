@@ -229,7 +229,8 @@ class _TimelineState extends State<Timeline> {
                 postLocations,
                 _customInfoWindowController,
                 widget.firebaseFirestore,
-                widget.firebaseAuth);
+                widget.firebaseAuth,
+                context);
             return Stack(
               children: [
                 GoogleMap(
