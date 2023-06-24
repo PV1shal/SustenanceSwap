@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: 'Urban Sketchers',
+        title: 'MealMates',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           primarySwatch: greenCustomColor,

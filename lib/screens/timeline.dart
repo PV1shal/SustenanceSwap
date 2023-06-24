@@ -116,7 +116,7 @@ class _TimelineState extends State<Timeline> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: const Text('Urban Sketchers'),
+        title: const Text('MealMates'),
         actions: [
           IconButton(
             icon: const Icon(
