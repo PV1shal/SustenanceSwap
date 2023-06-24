@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:urban_sketchers/utils/app_colors.dart';
 
 /// IntroOne is a stateful widget showing purpose of app
 class IntroOne extends StatefulWidget {
@@ -24,24 +25,23 @@ class _IntroOneState extends State<IntroOne> {
           ),
         ),
         Positioned(
-          top: 298,
-          height: 85,
+          top: 210,
+          height: 250,
           child: Image.asset(
-            'assets/img/Logo.png',
+            'assets/img/Logo_Icon.png',
             fit: BoxFit.cover,
+            width: 250,
           ),
         ),
-
-        // tagline
         const Positioned(
-          top: 490,
+          top: 500, // Set the desired top position here
           child: Text(
-            'City is Under your pencil',
+            '''Welcome to 
+              MealMates''',
             style: TextStyle(
-              fontSize: 24.0,
-              fontFamily: 'Source Sans Pro',
-              color: Colors.white,
+              fontSize: 40,
               fontWeight: FontWeight.bold,
+              color: AppColors.primaryFontColor,
             ),
           ),
         ),

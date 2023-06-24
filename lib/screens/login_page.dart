@@ -82,8 +82,8 @@ class _LoginPageState extends State<LoginPage> {
                 // Logo: Urban Sketchers
                 Center(
                   child: Image.asset(
-                    'assets/img/Logo.png',
-                    height: 85,
+                    'assets/img/Logo_Dark.png',
+                    height: 185,
                     width: w,
                     alignment: Alignment.topCenter,
                   ),

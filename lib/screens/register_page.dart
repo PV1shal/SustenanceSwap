@@ -288,7 +288,7 @@ class RegisterPageState extends State<RegisterPage> {
               Center(
                 key: const Key('LogoImage'),
                 child: Image.asset(
-                  'assets/img/Logo.png',
+                  'assets/img/Logo_Dark.png',
                   height: 85,
                   width: w,
                   alignment: Alignment.topCenter,

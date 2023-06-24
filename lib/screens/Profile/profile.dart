@@ -115,7 +115,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 5, top: 5),
                         child: Text(
-                          '@${userProfile.university}',
+                          '${userProfile.university}',
                           style: const TextStyle(
                             fontSize: 18,
                             color: AppColors.primaryFontColor,
