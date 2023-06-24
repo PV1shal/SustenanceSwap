@@ -9,7 +9,7 @@ extension PrivacyOptionExtension on PrivacyOption {
   String get value {
     switch (this) {
       case PrivacyOption.onlyMe:
-        return "Only me";
+        return "My University";
       case PrivacyOption.public:
         return "Public";
     }

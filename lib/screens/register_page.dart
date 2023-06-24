@@ -48,6 +48,7 @@ class RegisterPageState extends State<RegisterPage> {
   final bioController = TextEditingController();
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final universityNameController = TextEditingController();
+  String? selectedUniversity;
   late UserCredential _userCredential;
   final GlobalKey<ScaffoldMessengerState> _scaffoldMessengerKey =
       GlobalKey<ScaffoldMessengerState>();
@@ -381,17 +382,34 @@ class RegisterPageState extends State<RegisterPage> {
                     alignment: Alignment.center,
                     children: [
                       textEntryBox(),
-                      TextFormField(
-                        key: const Key('universityNameEntryField'),
-                        controller: universityNameController,
-                        decoration: const InputDecoration(
-                          border: InputBorder.none,
-                          hintText: 'University Name *',
-                          hintStyle: TextStyle(color: Colors.white30),
-                          contentPadding: EdgeInsets.only(left: 90.0),
-                        ),
+                      DropdownButton<String>(
+                        value: selectedUniversity,
                         style: const TextStyle(color: Colors.white),
-                      ),
+                        dropdownColor: AppColors
+                            .primaryBackgroundColor, // Set the desired background color
+                        items: <String>[
+                          "University of Toronto",
+                          "University of Waterloo",
+                          "Northeastern University",
+                          "MIT",
+                          "Harvard University",
+                          "University of British Columbia",
+                          "University of Ottawa",
+                        ].map((String value) {
+                          return DropdownMenuItem<String>(
+                            value: value,
+                            child: Text(value),
+                          );
+                        }).toList(),
+                        onChanged: (String? universityName) {
+                          if (universityName != null) {
+                            setState(() {
+                              selectedUniversity = universityName;
+                            });
+                            universityNameController.text = universityName;
+                          }
+                        },
+                      )
                     ],
                   ),
                 ),

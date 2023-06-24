@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -29,6 +31,8 @@ class SaveInFirestore {
         .collection('posts')
         .doc(postId);
 
+    final userDetails = await firestore.collection('users').doc(userUid).get();
+
     final batch = firestore.batch();
 
     batch.set(postRef, {
@@ -39,7 +43,9 @@ class SaveInFirestore {
       'latitude': latitude,
       'longitude': longitude,
       'timestamp': DateTime.now(),
-      'privacy': privacyOption,
+      'privacy': privacyOption == "Public"
+          ? "Public"
+          : userDetails.get('University Name'),
       'likes': [],
     });
 
