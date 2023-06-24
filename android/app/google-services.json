@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1048441793418",
+    "project_id": "final-project-titans",
+    "storage_bucket": "final-project-titans.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048441793418:android:e11e75981a74b8f1a6f673",
+        "android_client_info": {
+          "package_name": "com.example.urban_sketchers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048441793418-bgg44ftp0n116bk51aoj51lgnt90dvng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAatpkoK1_uIUiGpVa6A2HocahKyvZW7Ss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048441793418-bgg44ftp0n116bk51aoj51lgnt90dvng.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1048441793418-n7diu958d00j75f417v2p5cls0b66tho.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.titans.urbansketchers"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
