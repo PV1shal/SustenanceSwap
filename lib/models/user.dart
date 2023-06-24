@@ -19,6 +19,9 @@ class UserModel extends ChangeNotifier {
   /// User's Profile Pic - Firebase URL.
   String? profilePic;
 
+  /// User's University
+  String? university;
+
   /// List of Posts the user has uploaded.
   List<PostModel> posts = [];
 
@@ -37,6 +40,7 @@ class UserModel extends ChangeNotifier {
         fullName = userDoc.get('Full name');
         bio = userDoc.get('bio');
         profilePic = userDoc.get('Profile Pic');
+        university = userDoc.get('University Name');
         notifyListeners();
       }
     });
@@ -76,6 +80,7 @@ class UserModel extends ChangeNotifier {
       fullName = userDoc.get('Full name');
       bio = userDoc.get('bio');
       profilePic = userDoc.get('Profile Pic');
+      university = userDoc.get('University Name');
     }
 
     await fireBaseInstance

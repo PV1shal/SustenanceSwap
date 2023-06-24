@@ -1,37 +1,37 @@
 {
   "project_info": {
-    "project_number": "1048441793418",
-    "project_id": "final-project-titans",
-    "storage_bucket": "final-project-titans.appspot.com"
+    "project_number": "934497044642",
+    "project_id": "sustenance-swap",
+    "storage_bucket": "sustenance-swap.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1048441793418:android:e11e75981a74b8f1a6f673",
+        "mobilesdk_app_id": "1:934497044642:android:b03ed15ddd90a01513affb",
         "android_client_info": {
           "package_name": "com.example.urban_sketchers"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1048441793418-bgg44ftp0n116bk51aoj51lgnt90dvng.apps.googleusercontent.com",
+          "client_id": "934497044642-7fg35fhp1cb1j3hip7mh6bstl8ntu7k2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAatpkoK1_uIUiGpVa6A2HocahKyvZW7Ss"
+          "current_key": "AIzaSyBYVQekmCPdbVnZkIDFYne5L1bSQoB-uYs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1048441793418-bgg44ftp0n116bk51aoj51lgnt90dvng.apps.googleusercontent.com",
+              "client_id": "934497044642-7fg35fhp1cb1j3hip7mh6bstl8ntu7k2.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "1048441793418-n7diu958d00j75f417v2p5cls0b66tho.apps.googleusercontent.com",
+              "client_id": "934497044642-g1jj14hg0sh1f2lmnufp80l7f50oc94m.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "com.titans.urbansketchers"

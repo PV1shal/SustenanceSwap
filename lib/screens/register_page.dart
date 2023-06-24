@@ -47,6 +47,7 @@ class RegisterPageState extends State<RegisterPage> {
   final confPswdController = TextEditingController();
   final bioController = TextEditingController();
   final scaffoldKey = GlobalKey<ScaffoldState>();
+  final universityNameController = TextEditingController();
   late UserCredential _userCredential;
   final GlobalKey<ScaffoldMessengerState> _scaffoldMessengerKey =
       GlobalKey<ScaffoldMessengerState>();
@@ -66,6 +67,7 @@ class RegisterPageState extends State<RegisterPage> {
     passwordController.dispose();
     fullNameController.dispose();
     userNameController.dispose();
+    universityNameController.dispose();
     confPswdController.dispose();
     bioController.dispose();
     super.dispose();
@@ -130,7 +132,8 @@ class RegisterPageState extends State<RegisterPage> {
   void _validatePassword() {
     if (emailController.text.trim().isEmpty ||
         fullNameController.text.trim().isEmpty ||
-        userNameController.text.trim().isEmpty) {
+        userNameController.text.trim().isEmpty ||
+        universityNameController.text.trim().isEmpty) {
       showDialog(
         context: context,
         builder: (BuildContext context) {
@@ -233,19 +236,21 @@ class RegisterPageState extends State<RegisterPage> {
           emailController.text.trim(),
           bioController.text.trim(),
           userUID,
-          profilePic);
+          profilePic,
+          universityNameController.text.trim());
     }
   }
 
   // This method adds user details to the database
   Future addUserDetails(String fullname, String username, String email,
-      String bio, String uid, String? profilePic) async {
+      String bio, String uid, String? profilePic, universityName) async {
     await widget.firebaseFirestore.collection('users').doc(uid).set({
       'Full name': fullname,
       'Username': username,
       'Email': email,
       'bio': bio,
       'Profile Pic': profilePic,
+      'University Name': universityName,
     });
   }
 
@@ -369,6 +374,28 @@ class RegisterPageState extends State<RegisterPage> {
               ),
               // Off set 20
               //const SizedBox(height: 20),
+
+              Expanded(
+                child: Center(
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      textEntryBox(),
+                      TextFormField(
+                        key: const Key('universityNameEntryField'),
+                        controller: universityNameController,
+                        decoration: const InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'University Name *',
+                          hintStyle: TextStyle(color: Colors.white30),
+                          contentPadding: EdgeInsets.only(left: 90.0),
+                        ),
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
 
               // Stack of Bio entry
               Expanded(

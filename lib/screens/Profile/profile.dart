@@ -110,6 +110,22 @@ class _ProfilePageState extends State<ProfilePage> {
                             softWrap: false,
                           )),
                     ),
+                    SizedBox(
+                      width: 200,
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 5, top: 5),
+                        child: Text(
+                          '@${userProfile.university}',
+                          style: const TextStyle(
+                            fontSize: 18,
+                            color: AppColors.primaryFontColor,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          softWrap: false,
+                        ),
+                      ),
+                    )
                   ],
                 )
               ],

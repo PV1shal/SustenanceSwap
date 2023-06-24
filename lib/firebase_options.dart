@@ -44,40 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAitl4ZBqTC0P_UDLkzdyFyUJRo6h4VHA8',
-    appId: '1:1048441793418:web:f57e7f006b0012bca6f673',
-    messagingSenderId: '1048441793418',
-    projectId: 'final-project-titans',
-    authDomain: 'final-project-titans.firebaseapp.com',
-    storageBucket: 'final-project-titans.appspot.com',
-    measurementId: 'G-H3SLRWLLYS',
+    apiKey: 'AIzaSyCIWZggctOV4mQ-LLBI0xtzRKUSAMk-8ak',
+    appId: '1:934497044642:web:2ac753000dd290f413affb',
+    messagingSenderId: '934497044642',
+    projectId: 'sustenance-swap',
+    authDomain: 'sustenance-swap.firebaseapp.com',
+    storageBucket: 'sustenance-swap.appspot.com',
+    measurementId: 'G-T2K35PSMKT',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAatpkoK1_uIUiGpVa6A2HocahKyvZW7Ss',
-    appId: '1:1048441793418:android:e11e75981a74b8f1a6f673',
-    messagingSenderId: '1048441793418',
-    projectId: 'final-project-titans',
-    storageBucket: 'final-project-titans.appspot.com',
+    apiKey: 'AIzaSyBYVQekmCPdbVnZkIDFYne5L1bSQoB-uYs',
+    appId: '1:934497044642:android:b03ed15ddd90a01513affb',
+    messagingSenderId: '934497044642',
+    projectId: 'sustenance-swap',
+    storageBucket: 'sustenance-swap.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB8MoxnO8qHL5jYJkZhyJeYjZAMkzqbs-4',
-    appId: '1:1048441793418:ios:32202290dcfac585a6f673',
-    messagingSenderId: '1048441793418',
-    projectId: 'final-project-titans',
-    storageBucket: 'final-project-titans.appspot.com',
-    iosClientId: '1048441793418-rkiqnensjldgpirtd264jrlmupf0vjfc.apps.googleusercontent.com',
-    iosBundleId: 'com.example.urbanSketchers',
+    apiKey: 'AIzaSyAN0kAfQVMt5CJMG-DlmO6aPWiPJP7DlFw',
+    appId: '1:934497044642:ios:04e3673b51af238d13affb',
+    messagingSenderId: '934497044642',
+    projectId: 'sustenance-swap',
+    storageBucket: 'sustenance-swap.appspot.com',
+    iosClientId: '934497044642-g1jj14hg0sh1f2lmnufp80l7f50oc94m.apps.googleusercontent.com',
+    iosBundleId: 'com.titans.urbansketchers',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB8MoxnO8qHL5jYJkZhyJeYjZAMkzqbs-4',
-    appId: '1:1048441793418:ios:32202290dcfac585a6f673',
-    messagingSenderId: '1048441793418',
-    projectId: 'final-project-titans',
-    storageBucket: 'final-project-titans.appspot.com',
-    iosClientId: '1048441793418-rkiqnensjldgpirtd264jrlmupf0vjfc.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAN0kAfQVMt5CJMG-DlmO6aPWiPJP7DlFw',
+    appId: '1:934497044642:ios:427cefb5675b556c13affb',
+    messagingSenderId: '934497044642',
+    projectId: 'sustenance-swap',
+    storageBucket: 'sustenance-swap.appspot.com',
+    iosClientId: '934497044642-su11o4bu9s3cco1mng88gseehk86pi2c.apps.googleusercontent.com',
     iosBundleId: 'com.example.urbanSketchers',
   );
 }
