@@ -72,8 +72,8 @@ class AboutUs extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 5),
                       child: Text(
-                        "teamtitans@gmail.com",
-                        semanticsLabel: "teamtitans@gmail.com",
+                        "mealmates@gmail.com",
+                        semanticsLabel: "mealmates@gmail.com",
                         style: TextStyle(
                             fontSize: 16, color: AppColors.primaryFontColor),
                       ),
@@ -90,7 +90,7 @@ class AboutUs extends StatelessWidget {
                 color: AppColors.primaryAppBarBackgroundColor,
                 borderRadius: BorderRadius.all(Radius.circular(20))),
             width: MediaQuery.of(context).size.width * 0.85,
-            height: 125,
+            height: 100,
             child: Column(
               children: [
                 Row(
@@ -98,8 +98,8 @@ class AboutUs extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.all(15),
                       child: Text(
-                        "Contributors",
-                        semanticsLabel: "Contributors",
+                        "Created By",
+                        semanticsLabel: "Created By",
                         style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -112,50 +112,6 @@ class AboutUs extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Row(
-                          children: const [
-                            Padding(
-                              padding: EdgeInsets.only(left: 15),
-                              child: Text(
-                                "Ambika Kabra",
-                                semanticsLabel: "Ambika Kabra",
-                                style: TextStyle(
-                                    color: AppColors.primaryFontColor),
-                              ),
-                            )
-                          ],
-                        ),
-                        const SizedBox(height: 10),
-                        Row(
-                          children: const [
-                            Padding(
-                              padding: EdgeInsets.only(left: 15),
-                              child: Text(
-                                "Liang Huang",
-                                semanticsLabel: "Liang Huang",
-                                style: TextStyle(
-                                    color: AppColors.primaryFontColor),
-                              ),
-                            )
-                          ],
-                        ),
-                      ],
-                    ),
-                    Column(
-                      children: [
-                        Row(
-                          children: const [
-                            Padding(
-                              padding: EdgeInsets.only(left: 15),
-                              child: Text(
-                                "Sifan Wei",
-                                semanticsLabel: "Sifan Wei",
-                                style: TextStyle(
-                                    color: AppColors.primaryFontColor),
-                              ),
-                            )
-                          ],
-                        ),
                         const SizedBox(height: 10),
                         Row(
                           children: const [

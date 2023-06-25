@@ -86,8 +86,8 @@ class HelpCenter extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 28),
             child: Text(
-              "3. Why should I choose UrbanSketchers app?",
-              semanticsLabel: "Why should I choose UrbanSketchers app?",
+              "3. Why should I choose MealMates app?",
+              semanticsLabel: "Why should I choose MealMates app?",
               style: TextStyle(color: AppColors.primaryFocusColor),
             ),
           ),

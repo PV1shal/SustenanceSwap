@@ -37,8 +37,8 @@ class TermsAndConditions extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         const Text(
-                          "Welcome to UrbanSketchers!",
-                          semanticsLabel: "Welcome to UrbanSketchers!",
+                          "Welcome to MealMates!",
+                          semanticsLabel: "Welcome to MealMates!",
                           style: TextStyle(
                               color: AppColors.primaryFontColor,
                               fontSize: 18,

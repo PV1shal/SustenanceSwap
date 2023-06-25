@@ -22,7 +22,7 @@ class ShareProfile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final link = "https://urbansketcher.com/profile/$userID";
+    final link = "https://MealMates.com/profile/$userID";
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(

@@ -109,7 +109,7 @@ class _LoginPageState extends State<LoginPage> {
                             border: InputBorder.none,
                             hintText: 'Enter Email',
                             hintStyle: TextStyle(color: Colors.white30),
-                            contentPadding: EdgeInsets.only(left: 90.0),
+                            contentPadding: EdgeInsets.only(left: 80.0),
                           ),
                           style: const TextStyle(color: Colors.white),
                         ),
