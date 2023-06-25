@@ -47,30 +47,10 @@ class _WelcomePageState extends State<WelcomePage> {
               controller: _controller,
               children: const [
                 IntroOne(),
-                IntroTwo(),
-                IntroThree(),
-                IntroFour(),
+                // IntroTwo(),
+                // IntroThree(),
+                // IntroFour(),
               ],
-            ),
-          ),
-
-          // Dot indicator
-          Container(
-            alignment: const Alignment(0, 0.75),
-            child: SmoothPageIndicator(
-              controller: _controller,
-              count: 4,
-              onDotClicked: (index) {
-                _controller.animateToPage(index,
-                    duration: const Duration(milliseconds: 500),
-                    curve: Curves.decelerate);
-              },
-              effect: const ExpandingDotsEffect(
-                  expansionFactor: 1.5,
-                  dotColor: Colors.grey,
-                  activeDotColor: AppColors.primaryFocusColor,
-                  strokeWidth: 2,
-                  paintStyle: PaintingStyle.fill),
             ),
           ),
 
