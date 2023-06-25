@@ -95,39 +95,13 @@ class HelpCenter extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 28),
             child: Text(
-              """A. This app provides a platform for artist/sketch lovers to share their immediate sketching ideas through the city. Wherever/Whenever you are in the city, you can upload your wild thinking/impressions of a certain scenery to the platform, and share/communicate ideas worldwide. The arts have no limitation of proficiency, whether you are a professional or amateur, you can always use this app to share and learn.  """,
+              """A. MealMates provides a platform for students from various universities to share their fresh vegetables, fruits, produce, and meals with other students. Wherever/Whenever you are in the city, you can upload photos and share meals with your classmates. MealMates also has privacy features in which you can post only to your fellow university students or make it public, i.e., to all students of different Universities.  """,
               semanticsLabel:
-                  """This app provides a platform for artist/sketch lovers to share their immediate sketching ideas through the city. Wherever/Whenever you are in the city, you can upload your wild thinking/impressions of a certain scenery to the platform, and share/communicate ideas worldwide. The arts have no limitation of proficiency, whether you are a professional or amateur, you can always use this app to share and learn.  """,
+                  """MealMates provides a platform for students from various universities to share their fresh vegetables, fruits, produce, and meals with other students. Wherever/Whenever you are in the city, you can upload photos and share meals with your classmates. MealMates also has privacy features in which you can post only to your fellow university students or make it public, i.e., to all students of different Universities.  """,
               style: TextStyle(color: AppColors.primaryFontColor),
             ),
           ),
-          SizedBox(height: 15),
-          Padding(
-            padding: EdgeInsets.only(left: 28),
-            child: Text(
-              "4. Who is app's target audience?",
-              semanticsLabel: "Who is app's target audience?",
-              style: TextStyle(color: AppColors.primaryFocusColor),
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(left: 28),
-            child: Text(
-              """A. 
-   (i) People who love sketching or wants to try sketching: Not everyone has time and space to do fancy colorful paintings every day, but simple lines of sketch are easy. It would be a great place to start an art journey.   
-  
-  (ii) People who are artists themselves - The app would gather a group of local artists and enhance their communication.  
- 
- (iii) Tourists - This app will provide them with a different way of exploring the city and give them a chance to jot down their impressions of the city.""",
-              semanticsLabel:
-                  """(i) People who love sketching or wants to try sketching: Not everyone has time and space to do fancy colorful paintings every day, but simple lines of sketch are easy. It would be a great place to start an art journey.   
-  
-  (ii) People who are artists themselves - The app would gather a group of local artists and enhance their communication.  
- 
- (iii) Tourists - This app will provide them with a different way of exploring the city and give them a chance to jot down their impressions of the city.""",
-              style: TextStyle(color: AppColors.primaryFontColor),
-            ),
-          ),
+          SizedBox(height: 15)
         ],
       ),
     );
